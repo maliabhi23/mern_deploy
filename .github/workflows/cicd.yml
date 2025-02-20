@@ -25,5 +25,5 @@ jobs:
 
       - name: Build & Push Frontend Image
         run: |
-          docker build -t your-dockerhub-username/mern-frontend ./frontend
-          docker push your-dockerhub-username/mern-frontend
+          docker build -t maliabhi23/mern-frontend ./frontend
+          docker push maliabhi23/mern-frontend
