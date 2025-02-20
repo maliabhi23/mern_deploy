@@ -17,8 +17,8 @@ app.use(express.json());
 app.use("/api/v1", userRoutes);
 
 // CORS Configuration
-app.listen(PORT, () => {
-  console.log(`THE SERVER IS UP AND RUNNING AT PORT ${PORT}`);
+app.listen(4000, "0.0.0.0", () => {
+  console.log("Server running on port 4000");
 });
 
 dbConnect();
