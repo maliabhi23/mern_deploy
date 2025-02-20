@@ -50,4 +50,4 @@ jobs:
             
             # Run new containers
             docker run -d -p 5000:5000 --name mern-backend ${{ secrets.DOCKER_HUB_USERNAME }}/mern-backend
-            docker run -d -p 3000:80 --name mern-frontend ${{ secrets.DOCKER_HUB_USERNAME }}/mern-frontend
+            docker run -d -p 3000:3000 --name mern-frontend ${{ secrets.DOCKER_HUB_USERNAME }}/mern-frontend
