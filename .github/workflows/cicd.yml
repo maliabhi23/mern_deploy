@@ -21,7 +21,7 @@ jobs:
       - name: Build & Push Backend Image
         run: |
           docker build -t maliabhi23/mern-backend ./backend
-          docker push your-dockerhub-username/mern-backend
+          docker push maliabhi23/mern-backend
 
       - name: Build & Push Frontend Image
         run: |
