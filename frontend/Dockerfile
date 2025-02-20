@@ -16,11 +16,11 @@ COPY . .
 # Build frontend
 RUN npm run build
 
-# Install and use a lightweight web server for serving the frontend
+# Install a lightweight web server for serving the frontend
 RUN npm install -g serve
 
 # Expose frontend port
 EXPOSE 3000
 
-# Start frontend
-CMD ["serve", "-s", "build", "-l", "3000"]
+# Start frontend: bind to 0.0.0.0 on port 3000
+CMD ["serve", "-s", "build", "-l", "tcp://0.0.0.0:3000"]
